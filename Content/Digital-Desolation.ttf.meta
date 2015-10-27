@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Digital-Desolation",
+		uint64 ResourceId = 56380a161e5f5e46,
+	},
+},

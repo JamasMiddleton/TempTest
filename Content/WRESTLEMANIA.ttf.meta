@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "WRESTLEMANIA",
+		uint64 ResourceId = 56380b6cfb0af6fd,
+	},
+},

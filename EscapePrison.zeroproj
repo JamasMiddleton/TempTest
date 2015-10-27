@@ -6,7 +6,7 @@ Cog =
 		string ProjectOwner = "",
 		string DefaultLevel = "Level",
 		string ProjectSpace = "Space",
-		string ProjectFolder = "C:\Users\17.jamas.middleton\Desktop\GitHub\GameRep",
+		string ProjectFolder = "C:\Users\17.jamas.middleton\Desktop\GitHub\TempTest",
 		uint ProjectEngineRevision = 12259,
 		bool AutoTakeProjectScreenshot = true,
 	},

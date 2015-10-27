@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "TargetSwitcher",
+		uint64 ResourceId = 563809b33bee7812,
+	},
+},
