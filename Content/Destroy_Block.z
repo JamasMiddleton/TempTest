@@ -1,0 +1,28 @@
+class Destroy_Block : ZilchComponent
+{
+    var PointsValue : Integer = 0;
+    var Points : String = "Points: 0";
+    function Initialize(init : CogInitializer)
+    {
+        this.Points = "Points: `this.PointsValue`";
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+        var test = this.Space.FindObjectByName("pointValue");
+        test.SpriteText.Text = "`this.Points`";
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+    }
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        if(event.OtherObject.ArchetypeName == "Destroy")
+        {
+            this.PointsValue +=10;
+            this.Points = "Points: `this.PointsValue`";
+            Console.WriteLine("hello");
+            var test = this.Space.FindObjectByName("pointValue");
+            test.SpriteText.Text = "`this.Points`";
+        }
+    }
+}

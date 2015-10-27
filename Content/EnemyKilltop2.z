@@ -1,0 +1,22 @@
+class EnemyKilltop2 : ZilchComponent
+{
+  var Direction : Real3 = Real3(0,0,0);
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    }
+
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        if(event.OtherObject.ArchetypeName == "Player")
+        {
+            this.Space.ReloadLevel();
+            this.Direction = Real3(-13,19,2);
+            var spawnPosition = this.Owner.Transform.Translation;
+            var archetypeToSpawn = Archetype.Find("Player");
+            var createdBullet = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+            createdBullet.Transform.Translation = this.Direction;
+            Console.WriteLine("Hi");
+        }
+    }
+}

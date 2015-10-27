@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "Miidtoescape",
+		uint64 ResourceId = 56317797f3e7311e,
+	},
+},

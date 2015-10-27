@@ -1,0 +1,81 @@
+class EnemyControllerTopside : ZilchComponent
+{
+    var Time : Integer =0;
+    [Property]
+    var PaceSpeed: Real = 5.0;
+    [Property]
+    var ChaseSpeed: Real = 5.0;
+    var MaxMoveDistance: Real = 6;
+    var PaceDirection: Real3 = Real3(-1.0, 0.0, 0.0);
+    var StartPosition: Real3 = Real3();
+    
+    [Property]
+    var TargetObject: CogPath = null;
+    var ChaseTriggerDistance: Real = 7.0;
+    var DistanceFromTarget: Real = 0.0;
+    var ChaseDirection: Real3 = Real3();
+    var ChaseColor:Real4 = Real4 (1.0, 0.0, 0.0, 1.0);
+    var TargetWithinRange: Boolean = false;
+    var OriginalColor: Real4 = Real4();
+    
+    [Dependency]
+    var Transform: Transform = null;
+    [Dependency]
+    var Sprite: Sprite = null;
+    
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+        this.StartPosition = this.Owner.Transform.Translation;
+        this.OriginalColor = this.Owner.Sprite.Color;
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        this.TargetWithinRange = false;
+        if (this.TargetObject.Cog != null)
+            {
+                this.PaceBackAndForth(event);
+            }
+        else
+        {
+        this.PaceBackAndForth(event);
+        }
+    }
+    function PaceBackAndForth(event: UpdateEvent)
+    {
+        this.Owner.Sprite.Color = this.OriginalColor;
+        var displacement = this.Owner.Transform.Translation - this.StartPosition;
+        var distanceFromStart = Math.Length(displacement);
+        if (distanceFromStart >= this.MaxMoveDistance)
+        {
+            this.Time +=1;
+            if (this.Owner.Sprite.FlipY==false)
+            {
+                this.Owner.Sprite.FlipY = true;
+            }
+            if (this.Time>1)
+            {
+                if (this.Owner.Sprite.FlipY==true)
+                {
+                    this.Owner.Sprite.FlipY = false;
+                    this.Time=0;
+                }
+            }
+            this.PaceDirection = -displacement;
+        }
+        this.PaceDirection = Math.Normalize(this.PaceDirection);
+        this.Owner.Transform.Translation += this.PaceDirection * event.Dt * this.PaceSpeed;
+    }
+    function CalculateChaseDirection()
+    {
+        this.ChaseDirection = this.TargetObject.Cog.Transform.Translation - this.Owner.Transform.Translation;
+        this.DistanceFromTarget = Math.Length(this.ChaseDirection);
+        this.ChaseDirection = Math.Normalize(this.ChaseDirection);
+    }
+    function ChaseTarget(event: UpdateEvent)
+    {
+        this.Owner.Sprite.Color = this.ChaseColor;
+        this.Owner.Transform.Translation += this.ChaseDirection * event.Dt * this.ChaseSpeed;
+    }
+}

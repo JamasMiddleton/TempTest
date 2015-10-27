@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "LevelSelectSeudoCode",
+		uint64 ResourceId = 56397b89e19313d8,
+	},
+},

@@ -1,0 +1,53 @@
+class GameLogic : ZilchComponent
+{
+
+  var Level1: Level = Level.Find("Outside_World");
+  var Level2: Level = Level.Find("Top");
+  var Level3: Level = Level.Find("Middle");
+  var Level4: Level = Level.Find("TopV2");
+  var Level5: Level = Level.Find("MiddleV2");
+  var Level6: Level = Level.Find("Outside_WorldV2");
+  var Level7: Level = Level.Find("Start");
+    function Initialize(init : CogInitializer)
+    {   //Whenever a key is up, run on key function
+        Zero.Connect(Zero.Keyboard, Events.KeyUp, this.OnKeyUp);
+    }
+  function OnKeyUp(event : KeyboardEvent)
+  {
+    // When Space is pressed,
+    if (event.Key == Keys.Space)
+    {
+        // reload the level.
+        this.Space.ReloadLevel();
+    }
+    // If we press the right arrow:
+    if (event.Key == Keys.NumPad3)
+    {
+        this.Space.LoadLevel(this.Level1);
+    }
+    if (event.Key == Keys.NumPad2)
+    {
+        this.Space.LoadLevel(this.Level2);
+    }
+    if (event.Key == Keys.NumPad1)
+    {
+        this.Space.LoadLevel(this.Level3);
+    }
+        if (event.Key == Keys.NumPad4)
+    {
+        this.Space.LoadLevel(this.Level4);
+    }
+        if (event.Key == Keys.NumPad5)
+    {
+        this.Space.LoadLevel(this.Level5);
+    }
+        if (event.Key == Keys.NumPad6)
+    {
+        this.Space.LoadLevel(this.Level6);
+    }
+    if (event.Key == Keys.NumPad0)
+    {
+        this.Space.LoadLevel(this.Level7);
+    }
+  }
+}

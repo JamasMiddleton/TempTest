@@ -1,0 +1,33 @@
+class KeyOpen : ZilchComponent
+{
+      var Direction : Real3 = Real3(0,0,0);
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+        Zero.Connect(this.Owner, Events.CollisionEnded, this.OnCollisionEnded);
+    }
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        if(event.OtherObject.ArchetypeName == "Player")
+        {
+            //make 2 hatches, when i hit the key it switches from the one hatch to a 4th and 5th level;
+            var direction = Real3(0,0,-2);
+            var direction2 = Real3(-9.54046,18.9024,3);
+            var switchbox = this.Space.FindObjectByName("Hatchey");
+            var switchbox2 = this.Space.FindObjectByName("Hatcher");
+            var temp = this.Space.FindObjectByName("Closed");
+            temp.Transform.Translation = direction;
+            switchbox.Transform.Translation = direction;
+            switchbox2.Transform.Translation = direction2;
+            this.Owner.Destroy();
+        }
+    }
+    function OnCollisionEnded(event : CollisionEvent)
+    {
+    }
+}

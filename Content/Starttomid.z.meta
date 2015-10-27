@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "Starttomid",
+		uint64 ResourceId = 563010e74d00ff69,
+	},
+},

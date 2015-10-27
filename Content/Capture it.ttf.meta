@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Capture it",
+		uint64 ResourceId = 5636b157b9045d76,
+	},
+},

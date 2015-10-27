@@ -1,0 +1,25 @@
+class EnemyCommand : ZilchComponent
+{
+  var Direction : Real3 = Real3(0,0,0);
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    }
+
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        if(event.OtherObject.ArchetypeName == "Player")
+        {
+            this.Space.ReloadLevel();
+        }
+        else if(event.OtherObject.ArchetypeName == "PlayerV2")
+        {
+            this.Space.ReloadLevel();
+            this.Direction = Real3(-6.25,-21.7,2);
+            var spawnPosition = this.Owner.Transform.Translation;
+            var archetypeToSpawn = Archetype.Find("PlayerV2");
+            var createdBullet = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+            createdBullet.Transform.Translation = this.Direction;
+        }
+    }
+}

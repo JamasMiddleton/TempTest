@@ -1,0 +1,7 @@
+ContentLibrary = 
+{
+	string Name = "EscapePrison",
+	uint64 LibraryId = 561bc103f89209d7,
+	string SourceControlType = "",
+	bool ReadOnly = false,
+},

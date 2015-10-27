@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "ToplvltoKey",
+		uint64 ResourceId = 560c15e435d6c780,
+	},
+},

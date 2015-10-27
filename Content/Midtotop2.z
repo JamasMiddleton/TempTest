@@ -1,0 +1,29 @@
+class Midtotop2 : ZilchComponent
+{
+  var Level1: Level = Level.Find("Outside_World");
+  var Level2: Level = Level.Find("Top");
+  var Level3: Level = Level.Find("Middle");
+  var Level4: Level = Level.Find("TopV2");
+  var Level5: Level = Level.Find("MiddleV2");
+  var Level6: Level = Level.Find("Outside_WorldV2");
+  var Direction : Real3 = Real3(0,0,0);
+    function Initialize(init : CogInitializer)
+    {   //Whenever a key is up, run on key function
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    }
+  var Otation : Real3 = Real3(0,0,90);
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        if(event.OtherObject.ArchetypeName == "Player")
+        {
+            this.Space.LoadLevel(this.Level6);
+            this.Direction = Real3(-16.5,-19,2);
+            this.Otation = Real3(0,0,0);
+            var spawnPosition = this.Owner.Transform.Translation;
+            var archetypeToSpawn = Archetype.Find("Player");
+            var createdBullet = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+            createdBullet.Transform.Translation = this.Direction;
+
+        }
+    }
+}
