@@ -1,5 +1,6 @@
 class CollisionLocic : ZilchComponent
 {
+    var Time : Integer = 0;
     [Property]
     var Collide : Boolean = false;
     function Initialize(init : CogInitializer)
@@ -16,6 +17,10 @@ class CollisionLocic : ZilchComponent
         //connect the boolean to a hit on the box, parent the particle effect to 
         //the bullet and start a timer for the particle effect to dissapate and 
         //another for the level to load
-        this.Owner.Destroy;
+        this.Time +=1;
+        if (this.Time == 2)
+        {
+            //this.Owner.Sprite.Color = temp;
+        }
     }
 }
