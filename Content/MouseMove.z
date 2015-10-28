@@ -1,0 +1,24 @@
+class MouseMove : ZilchComponent
+{
+    function Initialize(init : CogInitializer)
+    {
+    var gameCamera = this.Space.FindObjectByName("Camera");
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+        Zero.Connect(gameCamera, Events.MouseDown, this.OnLeftMouseDown);
+    }
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+         Zero.Mouse.Cursor = Cursor.Invisible;
+        var gameCamera = this.Space.FindObjectByName("Camera");
+        var screenPos = Zero.Mouse.ScreenPosition;
+        var mousePos = this.LevelSettings.CameraViewport.ScreenToWorldZPlane(screenPos, 3.0);
+        this.Owner.Transform.Translation = (mousePos);
+    }
+      function OnLeftMouseDown(event : ViewportMouseEvent)
+  {
+        var spawnPosition = this.Owner.Transform.Translation;
+        var archetypeToSpawn = Archetype.Find("Bullet");
+        var createdBullet = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+        createdBullet.RigidBody.Velocity = Real3(0,0,-1);
+  }
+}

@@ -1,0 +1,21 @@
+class CollisionLocic : ZilchComponent
+{
+    [Property]
+    var Collide : Boolean = false;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    }
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        //connect the boolean to a hit on the box, parent the particle effect to 
+        //the bullet and start a timer for the particle effect to dissapate and 
+        //another for the level to load
+        this.Owner.Destroy;
+    }
+}

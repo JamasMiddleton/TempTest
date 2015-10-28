@@ -1,0 +1,17 @@
+class CreditsToMain : ZilchComponent
+{
+  var Level1: Level = Level.Find("MainMenu");
+
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    }
+
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        if (event.OtherObject.ArchetypeName == "credits")
+        {
+            this.Space.LoadLevel(this.Level1);
+        }
+    }
+}

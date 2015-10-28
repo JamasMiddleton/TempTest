@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "ReverseGrav",
+		uint64 ResourceId = 5626c1ff15010c28,
+	},
+},

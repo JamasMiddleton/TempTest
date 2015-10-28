@@ -1,0 +1,16 @@
+class ReverseGrav : ZilchComponent
+{
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(Zero.Keyboard, Events.KeyUp, this.OnKeyUp);
+    }
+
+  function OnKeyUp(event : KeyboardEvent)
+    {
+        if (event.Key == Keys.Space)
+        {
+            var temp = Real3(0,-10,0);
+            this.Space.LevelSettings.GravityEffect.Direction = temp;
+        }
+    }
+}
