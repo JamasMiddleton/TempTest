@@ -1,0 +1,18 @@
+class DeleteHitBox : ZilchComponent
+{
+  var Time : Integer = 0;
+  var Level1: Level = Level.Find("Start");
+  var Level2: Level = Level.Find("Top");
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+    }
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+    }
+}

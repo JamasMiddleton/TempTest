@@ -18,7 +18,7 @@ class GameLogic : ZilchComponent
     if (event.Key == Keys.Space)
     {
         // reload the level.
-        this.Space.ReloadLevel();
+        //this.Space.ReloadLevel();
     }
     // If we press the right arrow:
     if (event.Key == Keys.NumPad3)

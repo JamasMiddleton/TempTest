@@ -5,22 +5,36 @@ class CollisionLocic : ZilchComponent
     var Collide : Boolean = false;
     function Initialize(init : CogInitializer)
     {
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
         Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
     }
-
+        function OnCollisionStarted(event : CollisionEvent)
+    {
+        Console.WriteLine("When");
+        var invis = Real4(0,0,0,0);
+        this.Owner.Sprite.Color = invis;
+        this.Owner.Transform.Translation = Real3(0,0,-2);
+ //       var temp = this.Owner.CollisionLocic.Collide;
+ //       temp = true;
+ //       if (temp == true)
+ ////       {
+ //           Console.WriteLine("True");
+ //   }
+    }
     function OnLogicUpdate(event : UpdateEvent)
     {
-        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+ //       if (this.Owner.CollisionLocic.Collide == true)
+ //       {
+  //          Console.WriteLine("Helo");
+  //          this.Space.FindObjectByName("BulletEffects").SpriteParticleSystem.Visible = true;
+ //           this.Time += 1;
+ //           if (this. Time >= 3)
+ //           {
+//                this.Space.FindObjectByName("BulletEffects").SpriteParticleSystem.Visible = false;
+//            }
+//        }
     }
-    function OnCollisionStarted(event : CollisionEvent)
-    {
+}
         //connect the boolean to a hit on the box, parent the particle effect to 
         //the bullet and start a timer for the particle effect to dissapate and 
         //another for the level to load
-        this.Time +=1;
-        if (this.Time == 2)
-        {
-            //this.Owner.Sprite.Color = temp;
-        }
-    }
-}

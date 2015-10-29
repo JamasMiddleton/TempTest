@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "DeleteHitBox",
+		uint64 ResourceId = 562597f275121f9b,
+	},
+},

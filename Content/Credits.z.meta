@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "Credits",
+		uint64 ResourceId = 56258ee9804b8d1f,
+	},
+},
