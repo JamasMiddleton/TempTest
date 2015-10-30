@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Cracked-NarrowItalic",
+		uint64 ResourceId = 562438b9b46f61b9,
+	},
+},

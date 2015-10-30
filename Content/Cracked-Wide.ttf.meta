@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Cracked-Wide",
+		uint64 ResourceId = 562438b9b469ff00,
+	},
+},

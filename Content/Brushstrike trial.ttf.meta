@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Brushstrike trial",
+		uint64 ResourceId = 5624394ca78cf834,
+	},
+},
