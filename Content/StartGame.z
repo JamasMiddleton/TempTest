@@ -14,6 +14,9 @@ class StartGame : ZilchComponent
     }
     function OnCollisionStarted(event : CollisionEvent)
     {
+        if(event.OtherObject.ArchetypeName == "Bullet")
+        {
              this.Space.LoadLevel(this.Level1);
+        }
     }
 }

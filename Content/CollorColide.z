@@ -1,0 +1,26 @@
+class CollorColide : ZilchComponent
+{
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+        Zero.Connect(this.Owner, Events.CollisionEnded, this.OnCollisionEnded);
+    }
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        if(event.OtherObject.Name == "Target")
+        {
+        var orange = Real4(1.0,0.0,0.0,1);
+        this.Owner.SpriteText.Color = orange;
+        }
+    }
+    function OnCollisionEnded(event : CollisionEvent)
+    {
+        var white = Real4(1,1,1,0);
+        this.Owner.SpriteText.Color = white;
+    }
+}

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "WinComand",
+		uint64 ResourceId = 56203eb762cc2ba3,
+	},
+},

@@ -8,6 +8,7 @@ class GameLogic : ZilchComponent
   var Level5: Level = Level.Find("MiddleV2");
   var Level6: Level = Level.Find("Outside_WorldV2");
   var Level7: Level = Level.Find("Start");
+  var Level8: Level = Level.Find("MainMenu");
     function Initialize(init : CogInitializer)
     {   //Whenever a key is up, run on key function
         Zero.Connect(Zero.Keyboard, Events.KeyUp, this.OnKeyUp);
@@ -48,6 +49,10 @@ class GameLogic : ZilchComponent
     if (event.Key == Keys.NumPad0)
     {
         this.Space.LoadLevel(this.Level7);
+    }
+        if (event.Key == Keys.NumPad9)
+    {
+        this.Space.LoadLevel(this.Level8);
     }
   }
 }

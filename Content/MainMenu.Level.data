@@ -90,6 +90,9 @@ Level =
 			int HilightInterval = 10,
 			bool FollowEditorCamera = false,
 		},
+		GameLogic = 
+		{
+		},
 	},
 	Cog = 
 	{
@@ -103,7 +106,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-0.779939115, -3.94699788, 50],
+			Vec3 Translation = [-1.48127949, -6.08899164, 50],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-008, 0, 1],
 		},
@@ -115,7 +118,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 24.4280567,
+			float Size = 4.02750587,
 		},
 		EditorCameraController = 
 		{
@@ -123,7 +126,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [-0.779939115, -3.94699788, -3.40921957e-008],
+			Vec3 LookTarget = [-1.48127949, -6.08899164, -6.47487397e-008],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -166,11 +169,29 @@ Level =
 			bool Active = true,
 		},
 	},
+	ArchetypeInstance = 
+	{
+		string Name = "5626d93cdf0aa263:Target",
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 2, 2.00999999],
+			Vec3 Scale = [0.300000012, 0.300000012, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Target",
+		},
+	},
 	Cog = 
 	{
 		LinkId = 
 		{
-			uint Id = 4,
+			uint Id = 5,
 		},
 		Named = 
 		{
@@ -209,24 +230,6 @@ Level =
 			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
 			Vec3 Offset = [0, 0, 0],
 			Vec3 Size = [0.5, 0.5, 0.5],
-		},
-	},
-	ArchetypeInstance = 
-	{
-		string Name = "5626d93cdf0aa263:Target",
-		LinkId = 
-		{
-			uint Id = 5,
-		},
-		Transform = 
-		{
-			Vec3 Translation = [0, 2, 2],
-			Vec3 Scale = [0.300000012, 0.300000012, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		Named = 
-		{
-			string Name = "Target",
 		},
 	},
 	Cog = 
@@ -519,11 +522,11 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "SpriteText",
+			string Name = "PlaySpriteText",
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 2.46832848, 0.899999976],
+			Vec3 Translation = [0, 2.46832848, 1.99000001],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -544,6 +547,19 @@ Level =
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
 		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, -0.5, 0],
+			Vec3 Size = [4, 0.75, 1],
+		},
+		ColorColide = 
+		{
+		},
 	},
 	Cog = 
 	{
@@ -553,11 +569,11 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "SpriteText",
+			string Name = "HowToSpriteText",
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, -0.498980284, 0.899999976],
+			Vec3 Translation = [0, -0.498980284, 1.99000001],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -578,6 +594,19 @@ Level =
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
 		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, -0.5, 0],
+			Vec3 Size = [4, 0.75, 0.5],
+		},
+		ColorColide = 
+		{
+		},
 	},
 	Cog = 
 	{
@@ -587,11 +616,11 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "SpriteText",
+			string Name = "CreditsSpriteText",
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, -3.52684617, 0.899999976],
+			Vec3 Translation = [0, -3.52684617, 1.99000001],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -612,6 +641,19 @@ Level =
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
 		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, -0.5, 0],
+			Vec3 Size = [4, 0.75, 0.5],
+		},
+		ColorColide = 
+		{
+		},
 	},
 	Cog = 
 	{
@@ -621,11 +663,11 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "SpriteText",
+			string Name = "ExitSpriteText",
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, -6.52443314, 0.899999976],
+			Vec3 Translation = [0, -6.52443314, 1.99000001],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -645,6 +687,19 @@ Level =
 			TextAlign Align = Center,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, -0.5, 0],
+			Vec3 Size = [4, 0.75, 0.5],
+		},
+		ColorColide = 
+		{
 		},
 	},
 	Cog = 
@@ -879,6 +934,194 @@ Level =
 			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
 			Vec3 Offset = [0, 0, 0],
 			Vec3 Size = [0.5, 0.5, 0.0500000007],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 22,
+		},
+		Named = 
+		{
+			string Name = "PlaySpriteText",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.0547945499, 2.38613605, 1.99000001],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 0],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string FontName = "56380a161e5f5e46:Digital-Desolation",
+			uint FontSize = 60,
+			string Text = "Play",
+			TextAlign Align = Center,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, -0.5, 0],
+			Vec3 Size = [4, 0.75, 1],
+		},
+		CollorColide = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 23,
+		},
+		Named = 
+		{
+			string Name = "HowToSpriteText",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.0547945499, -0.581172228, 1.99000001],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 0],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string FontName = "56380a161e5f5e46:Digital-Desolation",
+			uint FontSize = 60,
+			string Text = "How To",
+			TextAlign Align = Center,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, -0.5, 0],
+			Vec3 Size = [4, 0.75, 0.5],
+		},
+		CollorColide = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 24,
+		},
+		Named = 
+		{
+			string Name = "CreditsSpriteText",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.0550955534, -3.61400485, 1.99000001],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 0],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string FontName = "56380a161e5f5e46:Digital-Desolation",
+			uint FontSize = 60,
+			string Text = "Credits",
+			TextAlign Align = Center,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, -0.5, 0],
+			Vec3 Size = [4, 0.75, 0.5],
+		},
+		CollorColide = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 25,
+		},
+		Named = 
+		{
+			string Name = "ExitSpriteText",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.0386197567, -6.57960463, 1.99000001],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 0],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string FontName = "56380a161e5f5e46:Digital-Desolation",
+			uint FontSize = 60,
+			string Text = "Exit",
+			TextAlign Align = Center,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, -0.5, 0],
+			Vec3 Size = [4, 0.75, 0.5],
+		},
+		CollorColide = 
+		{
 		},
 	},
 },

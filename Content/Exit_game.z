@@ -11,6 +11,9 @@ class Exit_game : ZilchComponent
     }
     function OnCollisionStarted(event : CollisionEvent)
     {
+        if(event.OtherObject.ArchetypeName == "Bullet")
+        {
         this.GameSession.Quit();
+        }
     }
 }
