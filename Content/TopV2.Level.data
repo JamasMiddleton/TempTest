@@ -3609,7 +3609,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [9.66538429, -9.00562763, 2],
+			Vec3 Translation = [9.32526016, -9.00562763, 2],
 			Vec3 Scale = [2.5, 2.75, 1],
 			Quat Rotation = [-0, 0, 1, -4.37113883e-008],
 		},
@@ -3682,7 +3682,7 @@ Level =
 		},
 		EnemyControllerTop = 
 		{
-			float PaceSpeed = 5,
+			float PaceSpeed = 8,
 			float ChaseSpeed = 5,
 			CogPath TargetObject = 
 			{
@@ -3793,7 +3793,7 @@ Level =
 		},
 		EnemyControllerTopside = 
 		{
-			float PaceSpeed = 5,
+			float PaceSpeed = 10,
 			float ChaseSpeed = 5,
 			CogPath TargetObject = 
 			{
@@ -3904,7 +3904,7 @@ Level =
 		},
 		EnemyControllerTop = 
 		{
-			float PaceSpeed = 5,
+			float PaceSpeed = 10,
 			float ChaseSpeed = 5,
 			CogPath TargetObject = 
 			{
@@ -4015,7 +4015,7 @@ Level =
 		},
 		EnemyControllerTopside = 
 		{
-			float PaceSpeed = 5,
+			float PaceSpeed = 16,
 			float ChaseSpeed = 5,
 			CogPath TargetObject = 
 			{

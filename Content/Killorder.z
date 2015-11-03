@@ -8,11 +8,11 @@ class EnemyCommand : ZilchComponent
 
     function OnCollisionStarted(event : CollisionEvent)
     {
-        if(event.OtherObject.ArchetypeName == "Player")
+        if(event.OtherObject.Name == "Player")
         {
             this.Space.ReloadLevel();
         }
-        else if(event.OtherObject.ArchetypeName == "PlayerV2")
+        else if(event.OtherObject.Name == "PlayerV2")
         {
             this.Space.ReloadLevel();
             this.Direction = Real3(-6.25,-21.7,2);

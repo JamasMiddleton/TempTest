@@ -2,8 +2,8 @@ DataContent =
 {
 	DataBuilder = 
 	{
-		string Name = "Credits",
-		uint64 ResourceId = 5626c7f779ad752d,
+		string Name = "Extras",
+		uint64 ResourceId = 562ecc6cc782304c,
 		string LoaderType = "Cog",
 		uint Version = 0,
 		bool ShowInEditor = true,

@@ -106,7 +106,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [5.0194068, 10.0876207, 50],
+			Vec3 Translation = [1.3602736, 17.7652626, 50],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-008, 0, 1],
 		},
@@ -118,7 +118,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 45.0302696,
+			float Size = 55.0001373,
 		},
 		EditorCameraController = 
 		{
@@ -126,7 +126,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [5.0194068, 10.0876207, 2.19405308e-007],
+			Vec3 LookTarget = [1.3602736, 17.7652626, 1.25027739e-007],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -181,7 +181,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 0.0189681649, 0],
+			Vec3 Translation = [0, 0.0189681649, -1],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -216,7 +216,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-9.09700298, 17.407402, 3],
+			Vec3 Translation = [-9.09700298, 17.407402, 0],
 			Vec3 Scale = [0.5, 3, 1],
 			Quat Rotation = [0, 0, 0.707106769, 0.707106769],
 		},
@@ -308,7 +308,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-14.9798651, 6.67773342, 2],
+			Vec3 Translation = [-14.9798651, 6.67773342, 0],
 			Vec3 Scale = [0.5, 15, 1],
 			Quat Rotation = [0, 0, 0.707106769, 0.707106769],
 		},
@@ -365,7 +365,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-8.02708244, 19.5900421, 3],
+			Vec3 Translation = [-8.02708244, 19.5900421, 0],
 			Vec3 Scale = [0.5, 3, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -422,7 +422,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-15.5165319, 25.5388031, 2],
+			Vec3 Translation = [-15.5165319, 25.5388031, 0],
 			Vec3 Scale = [2, 22, 1],
 			Quat Rotation = [0, 0, 0.707106769, 0.707106769],
 		},
@@ -479,7 +479,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-26.335083, -0.653862953, 2],
+			Vec3 Translation = [-26.335083, -0.653862953, 0],
 			Vec3 Scale = [2, 55, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -588,7 +588,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [16.5813904, 25.5388031, 2],
+			Vec3 Translation = [16.5813904, 25.5388031, 0],
 			Vec3 Scale = [2, 22, 1],
 			Quat Rotation = [0, 0, 0.707106769, 0.707106769],
 		},
@@ -719,7 +719,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-0.711175442, 3.50875521, 2],
+			Vec3 Translation = [-0.711175442, 3.50875521, 0],
 			Vec3 Scale = [2.5, 2.75, 1],
 			Quat Rotation = [0, 0, 0.707106769, 0.707106769],
 		},
@@ -792,7 +792,7 @@ Level =
 		},
 		SEnemyController = 
 		{
-			float PaceSpeed = 8,
+			float PaceSpeed = 12,
 			float ChaseSpeed = 5,
 			CogPath TargetObject = 
 			{
@@ -826,7 +826,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-14.9325666, 22.5698013, 2],
+			Vec3 Translation = [-14.9325666, 22.5698013, 0],
 			Vec3 Scale = [0.5, 15, 1],
 			Quat Rotation = [0, 0, 0.707106769, 0.707106769],
 		},
@@ -958,7 +958,7 @@ Level =
 		Scouts = 
 		{
 			float PaceSpeed = 0,
-			float ChaseSpeed = 5,
+			float ChaseSpeed = 7,
 			CogPath TargetObject = 
 			{
 				string Path = ":/Player",
@@ -969,7 +969,7 @@ Level =
 				bool UpdatePathOnCogChange = true,
 				bool UpdateCogOnInitialize = true,
 				bool ResolvedNullErrorOccurred = false,
-				uint ResolvedCog = 4294967293,
+				uint ResolvedCog = 18,
 				CogPathPreference PathPreference0 = CogRelative,
 				CogPathPreference PathPreference1 = SpaceRelative,
 				CogPathPreference PathPreference2 = Absolute,
@@ -984,7 +984,7 @@ Level =
 			{
 				LinkId = 
 				{
-					uint Id = 18,
+					uint Id = 19,
 				},
 				Named = 
 				{
@@ -1021,7 +1021,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 19,
+			uint Id = 20,
 		},
 		Named = 
 		{
@@ -1029,7 +1029,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-6.75004292, 14.6710682, 2],
+			Vec3 Translation = [-6.75004292, 14.6710682, 0],
 			Vec3 Scale = [0.5, 15, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -1078,7 +1078,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 20,
+			uint Id = 21,
 		},
 		Named = 
 		{
@@ -1086,7 +1086,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-13.3039436, 19.742588, 3],
+			Vec3 Translation = [-13.3039436, 19.742588, 0],
 			Vec3 Scale = [0.200000003, 6, 1],
 			Quat Rotation = [0, 0, 0.716301978, 0.697790444],
 		},
@@ -1150,7 +1150,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 21,
+			uint Id = 22,
 		},
 		Named = 
 		{
@@ -1164,7 +1164,7 @@ Level =
 		{
 			Vec3 Translation = [-5.09838867, 17.6877728, 2],
 			Vec3 Scale = [2.5, 2.75, 1],
-			Quat Rotation = [-0, 0, 0.707106769, -0.707106769],
+			Quat Rotation = [0, 0, -0.707106769, 0.707106769],
 		},
 		Sprite = 
 		{
@@ -1199,9 +1199,9 @@ Level =
 		Orientation = 
 		{
 			Vec3 GlobalUp = [0, 1, 0],
-			Vec3 UpVector = [0, 0, 1],
-			Vec3 ForwardVector = [0, 1, 0],
-			OrientationBases DefaultBases = ForwardYUpZ,
+			Vec3 UpVector = [0, 1, 0],
+			Vec3 ForwardVector = [0, 0, 1],
+			OrientationBases DefaultBases = ForwardZUpY,
 		},
 		IgnoreSpaceEffects = 
 		{
@@ -1233,7 +1233,7 @@ Level =
 		Scouts = 
 		{
 			float PaceSpeed = 0,
-			float ChaseSpeed = 5,
+			float ChaseSpeed = 7,
 			CogPath TargetObject = 
 			{
 				string Path = ":/Player",
@@ -1244,7 +1244,7 @@ Level =
 				bool UpdatePathOnCogChange = true,
 				bool UpdateCogOnInitialize = true,
 				bool ResolvedNullErrorOccurred = false,
-				uint ResolvedCog = 4294967293,
+				uint ResolvedCog = 18,
 				CogPathPreference PathPreference0 = CogRelative,
 				CogPathPreference PathPreference1 = SpaceRelative,
 				CogPathPreference PathPreference2 = Absolute,
@@ -1259,7 +1259,7 @@ Level =
 			{
 				LinkId = 
 				{
-					uint Id = 22,
+					uint Id = 23,
 				},
 				Named = 
 				{
@@ -1296,7 +1296,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 23,
+			uint Id = 24,
 		},
 		Named = 
 		{
@@ -1304,7 +1304,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-13.3039427, 18.0040379, 3],
+			Vec3 Translation = [-13.3039427, 18.0040379, 0],
 			Vec3 Scale = [0.200000003, 6, 1],
 			Quat Rotation = [0, 0, 0.716301978, 0.697790444],
 		},
@@ -1368,7 +1368,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 24,
+			uint Id = 25,
 		},
 		Named = 
 		{
@@ -1403,7 +1403,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 25,
+			uint Id = 26,
 		},
 		Named = 
 		{
@@ -1411,7 +1411,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [26.2964897, -0.653862953, 2],
+			Vec3 Translation = [26.2964897, -0.653862953, 0],
 			Vec3 Scale = [2, 55, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -1460,7 +1460,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 26,
+			uint Id = 27,
 		},
 		Named = 
 		{
@@ -1472,7 +1472,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [4.04959583, -0.301370144, 2],
+			Vec3 Translation = [4.04959583, -0.301370144, 0],
 			Vec3 Scale = [2.5, 2.75, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -1542,7 +1542,7 @@ Level =
 		},
 		EnemyController = 
 		{
-			float PaceSpeed = 8,
+			float PaceSpeed = 12,
 			float ChaseSpeed = 0,
 			CogPath TargetObject = 
 			{
@@ -1554,7 +1554,7 @@ Level =
 				bool UpdatePathOnCogChange = true,
 				bool UpdateCogOnInitialize = true,
 				bool ResolvedNullErrorOccurred = false,
-				uint ResolvedCog = 4294967293,
+				uint ResolvedCog = 18,
 				CogPathPreference PathPreference0 = CogRelative,
 				CogPathPreference PathPreference1 = SpaceRelative,
 				CogPathPreference PathPreference2 = Absolute,
@@ -1571,7 +1571,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 27,
+			uint Id = 28,
 		},
 		Named = 
 		{
@@ -1606,7 +1606,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 28,
+			uint Id = 29,
 		},
 		Named = 
 		{
@@ -1641,7 +1641,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 29,
+			uint Id = 30,
 		},
 		Named = 
 		{
@@ -1676,7 +1676,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 30,
+			uint Id = 31,
 		},
 		Named = 
 		{
@@ -1684,7 +1684,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-9.22539425, 21.4731026, 3],
+			Vec3 Translation = [-9.22539425, 21.4731026, 0],
 			Vec3 Scale = [0.5, 3, 1],
 			Quat Rotation = [0, 0, 0.707106769, 0.707106769],
 		},
@@ -1733,7 +1733,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 31,
+			uint Id = 32,
 		},
 		Named = 
 		{
@@ -1827,7 +1827,7 @@ Level =
 				bool UpdatePathOnCogChange = true,
 				bool UpdateCogOnInitialize = true,
 				bool ResolvedNullErrorOccurred = false,
-				uint ResolvedCog = 4294967293,
+				uint ResolvedCog = 18,
 				CogPathPreference PathPreference0 = CogRelative,
 				CogPathPreference PathPreference1 = SpaceRelative,
 				CogPathPreference PathPreference2 = Absolute,
@@ -1842,7 +1842,7 @@ Level =
 			{
 				LinkId = 
 				{
-					uint Id = 32,
+					uint Id = 33,
 				},
 				Named = 
 				{
@@ -1879,7 +1879,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 33,
+			uint Id = 34,
 		},
 		Named = 
 		{
@@ -1887,7 +1887,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-0.181917191, -27.132267, 2],
+			Vec3 Translation = [-0.181917191, -27.132267, 0],
 			Vec3 Scale = [2, 55, 1],
 			Quat Rotation = [0, 0, 0.707106769, 0.707106769],
 		},
@@ -1936,7 +1936,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 34,
+			uint Id = 35,
 		},
 		Named = 
 		{
@@ -1974,7 +1974,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 35,
+			uint Id = 36,
 		},
 		Named = 
 		{
@@ -2018,22 +2018,97 @@ Level =
 		{
 		},
 	},
-	ArchetypeInstance = 
+	Cog = 
 	{
-		string Name = "561bda5a8bdb6417:Player",
 		LinkId = 
 		{
-			uint Id = 36,
-		},
-		Transform = 
-		{
-			Vec3 Translation = [-12.5, 0, 2],
-			Vec3 Scale = [2.5, 2.75, 1],
-			Quat Rotation = [0, 0, -0.707106769, 0.707106769],
+			uint Id = 18,
 		},
 		Named = 
 		{
 			string Name = "Player",
+		},
+		Archetyped = 
+		{
+			string Name = "561bda5a8bdb6417:Player",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-12.5, 0, 0],
+			Vec3 Scale = [2.5, 2.75, 1],
+			Quat Rotation = [0, 0, -0.707106769, 0.707106769],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 0.999899983],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5605093fc93e8d95:path4180-2",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Orientation = 
+		{
+			Vec3 GlobalUp = [0, 1, 0],
+			Vec3 UpVector = [0, 0, 1],
+			Vec3 ForwardVector = [0, 1, 0],
+			OrientationBases DefaultBases = ForwardYUpZ,
+		},
+		PlayerController = 
+		{
+			float RotationSpeed = 150,
+			float Speed = 8,
+		},
+		IgnoreSpaceEffects = 
+		{
+			bool Drag = false,
+			bool Flow = false,
+			bool Force = false,
+			bool Gravity = true,
+			bool Thrust = false,
+			bool Vortex = false,
+			bool Wind = false,
+			bool Invalid = false,
+			bool Torque = false,
+			bool PointGravity = false,
+			bool PointForce = false,
+			bool Buoyancy = false,
+		},
+		CylinderCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.5,
+			float Height = 1,
+			uint Direction = 2,
+		},
+		Steps = 
+		{
 		},
 	},
 },
