@@ -118,7 +118,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 49.6585655,
+			float Size = 67.0320358,
 		},
 		EditorCameraController = 
 		{
@@ -3361,7 +3361,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [15.453661, -18.7390728, 0.5],
+			Vec3 Translation = [2.5982008, -20.0246201, 0.5],
 			Vec3 Scale = [2.5, 2.75, 1],
 			Quat Rotation = [0, 0, 0.382683456, 0.923879504],
 		},
@@ -4034,6 +4034,58 @@ Level =
 			},
 		},
 		EnemyKilltop2 = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 77,
+		},
+		Named = 
+		{
+			string Name = "Hatch",
+		},
+		Archetyped = 
+		{
+			string Name = "560ffcfd034235cd:Hatch2Key",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [21.6014404, -14.9737434, 2],
+			Vec3 Scale = [1.35000002, 3.5, 4.33287001],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 0.999899983],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "561ba18fc24bf1c6:Exitpath",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [1, 0.5, 0.5],
+		},
+		ToptoArmory2 = 
 		{
 		},
 	},

@@ -11,6 +11,11 @@ class EnemyCommand : ZilchComponent
         if(event.OtherObject.Name == "Player")
         {
             this.Space.ReloadLevel();
+            this.Direction = Real3(-6.25,-21.7,2);
+            var spawnPosition = this.Owner.Transform.Translation;
+            var archetypeToSpawn = Archetype.Find("PlayerV2");
+            var createdBullet = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+            createdBullet.Transform.Translation = this.Direction;
         }
         else if(event.OtherObject.Name == "PlayerV2")
         {
