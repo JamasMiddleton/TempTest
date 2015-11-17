@@ -20,7 +20,7 @@ class Midtotop2 : ZilchComponent
             this.Direction = Real3(-16.5,-19,2);
             this.Otation = Real3(0,0,0);
             var spawnPosition = this.Owner.Transform.Translation;
-            var archetypeToSpawn = Archetype.Find("Player");
+            var archetypeToSpawn = Archetype.Find("EnemyProjectile");
             var createdBullet = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
             createdBullet.Transform.Translation = this.Direction;
 

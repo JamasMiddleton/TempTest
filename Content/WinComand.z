@@ -1,6 +1,6 @@
 class WinComand : ZilchComponent
 {
-  var Level1: Level = Level.Find("Win");
+  var Level1: Level = Level.Find("Escaped");
   var Direction : Real3 = Real3(0,0,0);
     function Initialize(init : CogInitializer)
     {   //Whenever a key is up, run on key function

@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "PoPoattem2",
+		uint64 ResourceId = 5656ffafdfc8d95b,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 303,
+		uint FrameSizeY = 512,
+		uint FrameCount = 2,
+		float FrameDelay = 0.15384616,
+		float OriginX = 151,
+		float OriginY = 256,
+		float PixelsPerUnit = 64,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

@@ -16,7 +16,7 @@ class Toptokey2 : ZilchComponent
         if(event.OtherObject.ArchetypeName == "Player")
         {
             this.Space.LoadLevel(this.Level6);
-            this.Direction = Real3(-12.5,19,2);
+            this.Direction = Real3(-12.5,19,0);
             var spawnPosition = this.Owner.Transform.Translation;
             var archetypeToSpawn = Archetype.Find("Player");
             var createdBullet = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);

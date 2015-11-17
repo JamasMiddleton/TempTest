@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "ESPLOZEON",
+		uint64 ResourceId = 56558a57209db4cd,
+	},
+},

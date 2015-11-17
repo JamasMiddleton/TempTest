@@ -106,7 +106,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-1.48127949, -6.08899164, 50],
+			Vec3 Translation = [0.70965755, 0.854839563, 50],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-008, 0, 1],
 		},
@@ -118,7 +118,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 4.02750587,
+			float Size = 8.96339512,
 		},
 		EditorCameraController = 
 		{
@@ -126,7 +126,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [-1.48127949, -6.08899164, -6.47487397e-008],
+			Vec3 LookTarget = [0.70965755, 0.854839563, 3.10200434e-008],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -169,12 +169,19 @@ Level =
 			bool Active = true,
 		},
 	},
-	ArchetypeInstance = 
+	Cog = 
 	{
-		string Name = "5626d93cdf0aa263:Target",
 		LinkId = 
 		{
 			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "Target",
+		},
+		Archetyped = 
+		{
+			string Name = "5626d93cdf0aa263:Target",
 		},
 		Transform = 
 		{
@@ -182,9 +189,48 @@ Level =
 			Vec3 Scale = [0.300000012, 0.300000012, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
-		Named = 
+		Sprite = 
 		{
-			string Name = "Target",
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "563966345a8a78c7:Scope Entry",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		MouseMove = 
+		{
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.0500000007, 0.0500000007, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
 		},
 	},
 	Cog = 
@@ -554,7 +600,7 @@ Level =
 			bool Seamless = true,
 			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
 			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
-			Vec3 Offset = [0, -0.5, 0],
+			Vec3 Offset = [0, -0.479999989, 0],
 			Vec3 Size = [4, 0.75, 1],
 		},
 		ColorColide = 
@@ -976,7 +1022,7 @@ Level =
 			bool Seamless = true,
 			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
 			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
-			Vec3 Offset = [0, -0.5, 0],
+			Vec3 Offset = [0, -0.379999995, 0],
 			Vec3 Size = [4, 0.75, 1],
 		},
 		CollorColide = 
@@ -1023,7 +1069,7 @@ Level =
 			bool Seamless = true,
 			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
 			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
-			Vec3 Offset = [0, -0.5, 0],
+			Vec3 Offset = [0, -0.419999987, 0],
 			Vec3 Size = [4, 0.75, 0.5],
 		},
 		CollorColide = 
@@ -1070,7 +1116,7 @@ Level =
 			bool Seamless = true,
 			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
 			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
-			Vec3 Offset = [0, -0.5, 0],
+			Vec3 Offset = [0, -0.379999995, 0],
 			Vec3 Size = [4, 0.75, 0.5],
 		},
 		CollorColide = 
@@ -1117,7 +1163,7 @@ Level =
 			bool Seamless = true,
 			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
 			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
-			Vec3 Offset = [0, -0.5, 0],
+			Vec3 Offset = [0, -0.419999987, 0],
 			Vec3 Size = [4, 0.75, 0.5],
 		},
 		CollorColide = 

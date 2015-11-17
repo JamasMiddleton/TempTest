@@ -1,0 +1,21 @@
+class HITTRUE : ZilchComponent
+{
+var Time : Integer = Integer(0);
+var Time2 : Integer = Integer(0);
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        if(this.Space.FindObjectByName("BigTnk").Bulletgo.Hit == true)
+        {
+            this.Owner.Sprite.Visible = true;
+        }
+        if(this.Space.FindObjectByName("BigTnk").Bulletgo.Herro == true)
+        {
+            this.Owner.Sprite.Visible = false;
+        }
+    }
+}

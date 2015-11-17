@@ -1,0 +1,66 @@
+class Bulletgo : ZilchComponent
+{
+    [Property]
+    var Hit : Boolean = false;
+    var Herro : Boolean = false;
+    var Uhoh : Boolean = false;
+    var Uhoh2 : Boolean = false;
+    var Level1: Level = Level.Find("Win");
+    
+var Time : Integer = Integer(0);
+var Time2 : Integer = Integer(0);
+
+  var Direction : Real3 = Real3(0,15,0);
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+        function OnCollisionStarted(event : CollisionEvent)
+    {
+        this.Time = 1;
+        this.Owner.Bulletgo.Hit = true;
+        if (this.Owner.Bulletgo.Hit == true)
+        {
+            Console.WriteLine("WAHHT");
+        }
+    }
+        function OnLogicUpdate(event : UpdateEvent)
+        {
+        if (this.Time == 1)
+        {
+            Console.WriteLine("Hello");
+            this.Time +=1;
+        }
+        if (this.Time == 2)
+        {
+            this.Time2 += 1;
+        }
+
+        if (this.Time2 == 110)
+        {
+            Console.WriteLine("HEW");
+            
+            var spawnPosition = this.Owner.Transform.Translation;
+            var archetypeToSpawn = Archetype.Find("ESPLOZEION");
+            var createdBullet = this.Space.CreateAtPosition(archetypeToSpawn, spawnPosition);
+            createdBullet.Transform.Translation = this.Direction;
+        }
+        if (this.Time2 == 125)
+        {
+            this.Uhoh = true;
+        }
+        if (this.Time2 == 140)
+        {
+            this.Herro = true;
+        }
+        if (this.Time2 == 215)
+        {
+            this.Uhoh2 = true;
+        }
+        if (this.Time2 == 435)
+        {
+            this.Space.LoadLevel(this.Level1);
+        }
+    }
+}

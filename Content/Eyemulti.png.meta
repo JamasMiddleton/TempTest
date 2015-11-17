@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Eyemulti",
+		uint64 ResourceId = 562ae6ab8389b07c,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 50,
+		uint FrameSizeY = 46,
+		uint FrameCount = 12,
+		float FrameDelay = 0.0833333358,
+		float OriginX = 25,
+		float OriginY = 23,
+		float PixelsPerUnit = 50,
+		bool Smoothing = false,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

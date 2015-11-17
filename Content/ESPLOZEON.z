@@ -1,0 +1,35 @@
+class ESPLOZEON : ZilchComponent
+{
+var Time : Integer = Integer(0);
+var Time2 : Integer = Integer(0);
+  var Direction : Real3 = Real3(0,15,0);
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+        function OnCollisionStarted(event : CollisionEvent)
+    {
+        this.Time = 1;
+        Console.WriteLine("HEW");
+        this.Owner.SphericalParticleEmitter.Active = true;
+        this.Owner.Sprite.Visible = false;
+    }
+        function OnLogicUpdate(event : UpdateEvent)
+        {
+        if (this.Time == 1)
+        {
+            Console.WriteLine("Hello");
+            this.Time +=1;
+        }
+        if (this.Time == 2)
+        {
+            this.Time2 += 1;
+        }
+        if (this.Time2 == 100)
+        {
+            this.Owner.SphericalParticleEmitter.Active = false;
+            this.Owner.Sprite.Visible = false;
+        }
+    }
+}
