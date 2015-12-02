@@ -1,0 +1,21 @@
+class TextScript4 : ZilchComponent
+{
+    var Time : Real = 0.0;
+    var CharCount : Integer = 0;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        this.Time += event.Dt;
+        var words = "                                                                                                                                                I have to grab the gate key and get out alive...";
+        if(this.Time > 0.05 && this.CharCount < words.Count)
+        {
+            this.CharCount +=1;
+            var temp = words.SubString(0, this.CharCount);
+            this.Time = 0;
+            this.Owner.SpriteText.Text = temp;
+        }
+    }
+}

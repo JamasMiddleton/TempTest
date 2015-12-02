@@ -16,7 +16,7 @@ Cog =
 	{
 		Vec3 Translation = [0, 0, 0],
 		Vec3 Scale = [1, 1, 1],
-		Quat Rotation = [0, 0, 0, 1],
+		Quat Rotation = [0, 0, 0.707106769, 0.707106769],
 	},
 	Sprite = 
 	{
@@ -28,7 +28,7 @@ Cog =
 		BlendMode BlendMode = Alpha,
 		SpriteGeometryMode GeometryMode = ZPlane,
 		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
-		string SpriteSource = "5275aa4d802dd6dc:Square",
+		string SpriteSource = "5649e7a6e1681cdf:Bulletx2z",
 		bool RenderMask = false,
 		bool FlipX = false,
 		bool FlipY = false,

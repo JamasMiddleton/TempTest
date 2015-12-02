@@ -17,7 +17,7 @@ class Miidtoescape : ZilchComponent
         if(event.OtherObject.ArchetypeName == "Player")
         {
             this.Space.LoadLevel(this.Level6);
-            this.Direction = Real3(-6.25,-21.7,0);
+            this.Direction = Real3(-6.25,-21.7,2);
             this.Otation = Real3(0,0,0);
             var spawnPosition = this.Owner.Transform.Translation;
             var archetypeToSpawn = Archetype.Find("PlayerV2");

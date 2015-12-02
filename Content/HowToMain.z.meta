@@ -1,0 +1,8 @@
+TextContent = 
+{
+	ZilchScriptBuilder = 
+	{
+		string Name = "HowToMain",
+		uint64 ResourceId = 564b288e0d53bc2c,
+	},
+},

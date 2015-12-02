@@ -1,0 +1,11 @@
+AudioContent = 
+{
+	SoundBuilder = 
+	{
+		string Name = "270461__littlerobotsoundfactory__gate-open-00 (1)",
+		uint64 ResourceId = 56446a8d9760a81c,
+		bool Compressed = true,
+		uint Quality = 100,
+		SoundLoadType LoadType = Decompress,
+	},
+},

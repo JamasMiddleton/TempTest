@@ -6,11 +6,15 @@ Cog =
 	},
 	Named = 
 	{
-		string Name = "Sprite",
+		string Name = "BigTnk",
+	},
+	Archetyped = 
+	{
+		string Name = "5655b2c55f3129b3:BUGTUNK",
 	},
 	Transform = 
 	{
-		Vec3 Translation = [0, 60, 0],
+		Vec3 Translation = [0, 32.8652954, 1],
 		Vec3 Scale = [9.5, 9.5, 1],
 		Quat Rotation = [-0, 0, 1, -4.37113883e-008],
 	},
@@ -68,5 +72,21 @@ Cog =
 		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
 		Vec3 Offset = [0, 0, 0],
 		Vec3 Size = [0.5, 0.5, 0.5],
+	},
+	Bulletgo = 
+	{
+		bool Hit = false,
+	},
+	SoundEmitter = 
+	{
+		float Volume = 1,
+		float Pitch = 0,
+		bool Positional = true,
+		int Version = 1,
+	},
+	SimpleSound = 
+	{
+		bool StartPlaying = true,
+		string CueName = "56433cf2939df619:Weakeffort",
 	},
 },

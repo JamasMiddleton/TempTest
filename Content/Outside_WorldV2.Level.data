@@ -106,7 +106,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [10.4141769, 26.0658321, 50],
+			Vec3 Translation = [15.2505054, 13.1492443, 50],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-008, 0, 1],
 		},
@@ -118,7 +118,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 67.0320358,
+			float Size = 49.6586151,
 		},
 		EditorCameraController = 
 		{
@@ -126,7 +126,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [10.4141769, 26.0658321, 1.60636137e-006],
+			Vec3 LookTarget = [15.2505054, 13.1492443, 1.81776284e-006],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -1554,7 +1554,7 @@ Level =
 				bool UpdatePathOnCogChange = true,
 				bool UpdateCogOnInitialize = true,
 				bool ResolvedNullErrorOccurred = false,
-				uint ResolvedCog = 4294967293,
+				uint ResolvedCog = 18,
 				CogPathPreference PathPreference0 = CogRelative,
 				CogPathPreference PathPreference1 = SpaceRelative,
 				CogPathPreference PathPreference2 = Absolute,
@@ -1827,7 +1827,7 @@ Level =
 				bool UpdatePathOnCogChange = true,
 				bool UpdateCogOnInitialize = true,
 				bool ResolvedNullErrorOccurred = false,
-				uint ResolvedCog = 4294967293,
+				uint ResolvedCog = 18,
 				CogPathPreference PathPreference0 = CogRelative,
 				CogPathPreference PathPreference1 = SpaceRelative,
 				CogPathPreference PathPreference2 = Absolute,
@@ -2026,11 +2026,11 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "Sprite",
+			string Name = "Armor",
 		},
 		Transform = 
 		{
-			Vec3 Translation = [18.8521576, -5.11294651, 1],
+			Vec3 Translation = [18.8521576, -5.11294651, 2],
 			Vec3 Scale = [8, 4, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -2068,6 +2068,20 @@ Level =
 			TextAlign Align = Center,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Boots = 
+		{
+			bool HasBoots = false,
 		},
 	},
 	Cog = 
@@ -2339,6 +2353,81 @@ Level =
 			uint StartFrame = 0,
 		},
 	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 49,
+		},
+		Named = 
+		{
+			string Name = "TAXT",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [11.8601999, 14.5281296, 4],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 60,
+			string Text = "",
+			TextAlign Align = Center,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		Found = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 50,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [15.1824789, 1.5, -1],
+			Vec3 Scale = [1.25, 1.25, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = false,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = true,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "564883ba3d7e75d6:SWAGSHOES",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		Bootshow = 
+		{
+		},
+	},
 	ArchetypeInstance = 
 	{
 		string Name = "561bda5a8bdb6417:Player",
@@ -2348,7 +2437,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-12.5, 0, 2],
+			Vec3 Translation = [9.70663071, -10.396534, 2],
 			Vec3 Scale = [2.5, 2.75, 1],
 			Quat Rotation = [0, 0, -0.707106769, 0.707106769],
 		},

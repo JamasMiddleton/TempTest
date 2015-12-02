@@ -1,0 +1,23 @@
+class HowToMain : ZilchComponent
+{
+  var Time : Integer = 0;
+  var Level1: Level = Level.Find("MainMenu");
+  var Level2: Level = Level.Find("Top");
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+    }
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        if(event.OtherObject.ArchetypeName == "Bullet")
+        {
+
+             this.Space.LoadLevel(this.Level1);
+        }
+    }
+}

@@ -1,0 +1,17 @@
+class ReverseGravt : ZilchComponent
+{
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    }
+
+    function OnCollisionStarted(event : CollisionEvent)
+    {
+        if (event.OtherObject.ArchetypeName == "ASDF")
+        {
+            var temp = Real3(0,-1,0);
+            this.Owner.RigidBody.Velocity = temp;
+            Console.WriteLine("WAW");
+        }
+    }
+}

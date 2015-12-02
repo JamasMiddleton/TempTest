@@ -103,7 +103,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-5.43244076, 28.7278767, 50],
+			Vec3 Translation = [-8.15865993, -18.9225941, 50],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278471e-008, 0, 1],
 		},
@@ -115,7 +115,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 100,
+			float Size = 44.9329338,
 		},
 		EditorCameraController = 
 		{
@@ -123,7 +123,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [-5.43244076, 28.7278767, -2.37459815e-007],
+			Vec3 LookTarget = [-8.15865993, -18.9225941, -3.56626657e-007],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -1730,7 +1730,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 52.4543381, 1],
+			Vec3 Translation = [0, 52.3927879, 1],
 			Vec3 Scale = [9.5, 9.5, 1],
 			Quat Rotation = [-0, 0, 1, -4.37113883e-008],
 		},
@@ -1792,6 +1792,18 @@ Level =
 		Bulletgo = 
 		{
 			bool Hit = false,
+		},
+		SoundEmitter = 
+		{
+			float Volume = 1,
+			float Pitch = 0,
+			bool Positional = true,
+			int Version = 1,
+		},
+		SimpleSound = 
+		{
+			bool StartPlaying = true,
+			string CueName = "56433cf2939df619:Weakeffort",
 		},
 	},
 	Cog = 

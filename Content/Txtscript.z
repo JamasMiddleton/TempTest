@@ -1,0 +1,27 @@
+class Txtscript : ZilchComponent
+{
+    var Time : Real = 0.0;
+    var CharCount : Integer = 0;
+    [Property]
+    var Closed : Boolean = false;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        this.Time += event.Dt;
+        var words = "You have been imprisoned in this, well... very small jail. \r\n You must find the key and make your way to escape. \r\n However these enemies will know once you have attained \r\n your key and they will chase after you with an even greater \r\n rage, so get your key, and get your butt out of there!";
+        if(this.Time > 0.05 && this.CharCount < words.Count)
+        {
+            this.CharCount +=1;
+            var temp = words.SubString(0, this.CharCount);
+            this.Time = 0;
+            this.Owner.SpriteText.Text = temp;
+        }
+        if (this.CharCount >= words.Count)
+        {
+            this.Owner.Txtscript.Closed = true;
+        }
+    }
+}

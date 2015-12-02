@@ -1,0 +1,16 @@
+class Bootshow : ZilchComponent
+{
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        if(this.Space.FindObjectByName("TAXT").Found.Baws == true)
+        {
+            this.Owner.Sprite.Visible = true;
+            this.Owner.Transform.Translation = Real3(15.1825,1.5,1);
+        }
+    }
+}

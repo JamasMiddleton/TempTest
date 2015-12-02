@@ -1,0 +1,14 @@
+class Boots : ZilchComponent
+{
+    [Property]
+    var HasBoots : Boolean = false;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Owner, Events.CollisionStarted, this.OnCollisionStarted);
+    }
+        function OnCollisionStarted(event : CollisionEvent)
+    {
+        this.HasBoots = true;
+        Console.WriteLine("hasBoots");
+    }
+}

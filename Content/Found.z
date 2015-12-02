@@ -1,0 +1,30 @@
+class Found : ZilchComponent
+{
+    var Time : Real = 0.0;
+    var CharCount : Integer = 0;
+    var Baws : Boolean = false;
+    function Initialize(init : CogInitializer)
+    {
+        Zero.Connect(this.Space, Events.LogicUpdate, this.OnLogicUpdate);
+    }
+
+    function OnLogicUpdate(event : UpdateEvent)
+    {
+        if(this.Space.FindObjectByName("Armor").Boots.HasBoots == true)
+        {
+            this.Time += event.Dt;
+        }
+        var words = "Hey, Now if only I got around to implementing\r\n speed properly you'd be zooming off in these\r\n new sweet boots, but instead I have failed\r\n at the pathetic attempt of trying so now you get to\r\n sit here and read this obsesivly long\r\n drawn out speech due to my innability to code \r\n happy hunting!!! :)";
+        if(this.Space.FindObjectByName("Armor").Boots.HasBoots == true && this.CharCount < words.Count && this.Time > 0.04)
+        {
+            this.CharCount +=1;
+            var temp = words.SubString(0, this.CharCount);
+            this.Owner.SpriteText.Text = temp;
+            this.Time = 0;
+        }
+        if(this.CharCount >= 110)
+        {
+            this.Baws = true;
+        }
+    }
+}

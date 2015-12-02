@@ -14,6 +14,7 @@ class PlayerController : ZilchComponent
 
     function OnLogicUpdate(event : UpdateEvent)
     {
+
         //Console.WriteLine(this.Owner.Transform.Rotation);
         var rotation = this.Owner.Transform.EulerAngles.Z;
         rotation = Math.ToDegrees(rotation);

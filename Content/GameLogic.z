@@ -21,38 +21,44 @@ class GameLogic : ZilchComponent
         // reload the level.
         //this.Space.ReloadLevel();
     }
-    // If we press the right arrow:
     if (event.Key == Keys.NumPad3)
     {
-        this.Space.LoadLevel(this.Level1);
+        var space = this.LoadLevel(this.Level1);
     }
     if (event.Key == Keys.NumPad2)
     {
-        this.Space.LoadLevel(this.Level2);
+        var space = this.LoadLevel(this.Level2);
     }
     if (event.Key == Keys.NumPad1)
     {
-        this.Space.LoadLevel(this.Level3);
+        var space = this.LoadLevel(this.Level3);
     }
         if (event.Key == Keys.NumPad4)
     {
-        this.Space.LoadLevel(this.Level4);
+        var space = this.LoadLevel(this.Level4);
     }
         if (event.Key == Keys.NumPad5)
     {
-        this.Space.LoadLevel(this.Level5);
+        var space = this.LoadLevel(this.Level5);
     }
         if (event.Key == Keys.NumPad6)
     {
-        this.Space.LoadLevel(this.Level6);
+        var space = this.LoadLevel(this.Level6);
     }
     if (event.Key == Keys.NumPad0)
     {
-        this.Space.LoadLevel(this.Level7);
+        var space = this.LoadLevel(this.Level7);
     }
         if (event.Key == Keys.NumPad9)
     {
-        this.Space.LoadLevel(this.Level8);
+        var space = this.LoadLevel(this.Level8);
     }
   }
+        function LoadLevel(level : Level) : Space
+    {
+        var space = this.GameSession.CreateSpace(Archetype.Find("Space"));
+        space.LoadLevel(level);
+        this.Space.Destroy();
+        return space;
+    }
 }
